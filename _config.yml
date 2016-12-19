@@ -1,0 +1,47 @@
+# Site settings
+title: "SherSec"
+email: dev.null@localhost
+description: "SherSec website"
+title_description: "hanging out Wednesdays at Boquebiere"
+title_image: "/css/images/favicons/apple-touch-icon-152x152.png"
+rss: "/feed.xml"
+#
+#   if you run locally OR inside a subdir 
+#   OR on the root of a server...
+#  
+# if running in asubdir on a web server include URL
+baseurl: ""
+#http://SherSec.io"
+#  Where the web site is located
+url: "http://SherSec.io"
+
+
+#google_analytics: "UA-20365477-4"
+#disqus_account: cartenoire
+github_repository: https://github.com/SherSec/shersec.github.io
+
+#addthis_id: ra-513c6fa83da6ec67
+#post_limit: 5
+
+# Social usernames/URLs
+#twitter_username: BlackMaria
+github_username:  SherSec/shersec.github.io
+#linkedin_link: http://url
+#google_plus_link: http://url
+#stackoverflow_link: http://url
+
+
+
+# Footer
+footer_left: "jekyll theme <a href=\"https://github.com/jacobtomlinson/carte-noire\">Jacob Tomlinson on Github</a>"
+footer_right: "translations, pull requests? <a href=\"https://github.com/SherSec/shersec.github.io\">SherSec</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+# Build settings
+
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+
+#
+permalink: pretty 
+gems: ['kramdown']
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile','Makefile']

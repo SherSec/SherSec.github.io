@@ -1,76 +1,23 @@
 ---
 layout: default
 ---
+<div class="post">
 
-<a href="{{site.url}}">  
-{% if page.minutes %}
-  {% assign minutes = page.minutes %}
-{% else %}
-  {% assign minutes = content | number_of_words | divided_by: 180 %}
-  {% if minutes == 0 %}{% assign minutes = 1 %}{% endif %}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }} by {% if page.author %} {{ page.author }}{% endif %}  
+{% if page.categories %}
+  in
+  {% for cat in page.categories %}
+  <a href="/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+  {% endfor %}
+
 {% endif %}
+</p>
+  </header>
 
-
-<div class="container-fluid single">
-  <div class="row">
-
-    <div itemscope itemtype="http://schema.org/Article" class="col-md-12 article">
-      {% if site.data.thumbnail[page.thumbnail] %}
-      <div class="thumb">
-        <img itemprop="image" src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}" />
-      </div>
-      {% elsif page.thumbnail %}
-      <div class="thumb">
-        <i class="fa fa-{{ page.thumbnail }} fa-4x"></i>
-      </div>
-      {% endif %}
-
-      <h1 class="header" itemprop="name">{{ page.title }}</h1>
-</a>
-      <div class="author">
-        <small><i>
-          by
-          <span itemprop="author">
-            {% if site.google_plus_link %}
-              <a rel="author" href="{{ site.google_plus_link }}">
-            {% endif %}
-            {% if page.author %}
-            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">{{ page.author }}</span>
-            </span>
-            {% endif %}
-            {% if site.google_plus_link %}
-              </a>
-            {% endif %}
-          </span>
-          on <span itemprop="datePublished" content="2014-08-28">{{ page.date | date: "%B %-d, %Y" }}</span>
-          under {% if page.categories %}{% for category in page.categories limit:1 %}{{ category }}{% endfor %}{% endif %}
-        </i></small>
-      </div>
-
-      <div class="read-time">
-        <small>
-          {{ minutes }} minute read
-        </small>
-      </div>
-
-      <div class="content-panel content">
-        <span itemprop="articleBody">{{ content }}</span>
-
- 
-
-      </div>
-
- 
-
- 
-
-  
-
-    </div>
-
-  </div>
+  <article class="post-content">
+    {{ content }}
+  </article>
 
 </div>
-
- 

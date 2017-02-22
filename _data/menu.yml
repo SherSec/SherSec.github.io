@@ -1,0 +1,20 @@
+- title: "About"
+  href: "/about/"
+
+- title: "info"
+  href: "/blog/"
+
+#- title: "CV"
+#  href: "/cv/"
+
+- title: "Referances"
+  href: "/miscellany/"
+  subcategories:
+    - subtitle: "AMITRE Cybersecurity Operation Center"
+      subhref: "/miscellany/miter-10-scoc/"
+    - subtitle: "NIST 800 30r1: Risk Assessments"
+      subhref: "/miscellany/800-30r1/"
+    - subtitle: "NIST 800 183: Networks of 'Things'"
+      subhref: "/miscellany/800-183/"
+    - subtitle: "NIST 800 184: Event Recovery"
+      subhref: "/miscellany/800-184/"

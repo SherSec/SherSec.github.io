@@ -1,12 +1,55 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: default
 ---
 
-{% include image.html url="/images/Curved-Lines-White-Background-Right-Letters-fs8.png" caption="What do a typewriter and a sewing machine have in common?" width=300 align="right" %}
 
+<div class="container-fluid index">
+    <div class="row">
 
-Shersec is a group of individuals who like all things technology, foods and drinks that ferment, and try to be security aware.
+        <div class="col-md-12 main content-panel">
 
-Sherbrooke, Québec's local infosec, electronic hackers, coffee fanatics and brewing geeks get together every Tuesday at le Boq.
+            <! div class="gravatar">
+                <!img src="{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+                <!/div>
+
+            <h1 class="header author-header" itemprop="headline">{{ site.title }}</h1>
+
+            <div class="author-text">
+                {{ site.title_description }}
+            </div>
+
+            <div class="links">
+                {% if site.twitter_username %}<a href="http://www.twitter.com/{{ site.twitter_username }}" target="_new"><i class="fa fa-twitter fa-2x"></i></a>{% endif %}
+                {% if site.linkedin_link %}<a href="{{ site.linkedin_link }}" target="_new"><i class="fa fa-linkedin fa-2x"></i></a>{% endif %}
+                {% if site.google_plus_link %}<a href="{{ site.google_plus_link }}" target="_new"><i class="fa fa-google-plus fa-2x"></i></a>{% endif %}
+                {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}" target="_new"><i class="fa fa-github-alt fa-2x"></i></a>{% endif %}
+                {% if site.stackoverflow_link %}<a href="{{ site.stackoverflow_link }}" target="_new"><i class="fa fa-stack-overflow fa-2x"></i></a>{% endif %}
+                <a href="/feed.xml" target="_new"><i class="fa fa-rss fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="col-md-12 main content-panel">
+
+            <div class="articles">
+
+              <h2>Things of note</h2>
+
+              <ul>
+                  {% for post in site.posts | limit: site.post_limit %}
+
+                      <li>
+                          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                          <small class="hidden-xs">{{ post.date | date: "%B %-d, %Y" }}</small>
+                      </li>
+
+                  {% endfor %}
+                  <li>
+                      <small><i><a href="/posts/">more...</a></i></small>
+                  </li>
+              </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

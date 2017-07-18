@@ -9,4 +9,4 @@ permalink: /about/
 
 Shersec is a group of individuals who like all things technology, foods and drinks that ferment, and try to be security aware.
 
-The local infosec, electronic hackers, coffee fanatics and brewing geeks get together every Tuesday at le Boq.
+Sherbrooke, Québec's local infosec, electronic hackers, coffee fanatics and brewing geeks get together every Tuesday at le Boq.

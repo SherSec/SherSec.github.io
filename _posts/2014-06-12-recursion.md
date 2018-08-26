@@ -4,7 +4,7 @@ title: "SherSec community links"
 description: ""
 date: 2014-06-12
 author: BlackMaria
-category: 
+categories: info
 tags: []
 ---
 

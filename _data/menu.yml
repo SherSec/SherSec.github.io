@@ -1,11 +1,18 @@
 - title: "About"
   href: "/about/"
+  subcategories:
+    - subtitle: "meetups"
+      subhref: "/about/meetups/"
+    - subtitle: "pullrequest"
+      subhref: "/about/pullrequest/"
+    - subtitle: "recursion"
+      subhref: "/about/recursion/"
+    - subtitle: "sec4noobs"
+      subhref: "/about/sec4noobs/" 
 
-- title: "info"
+
+- title: "blog"
   href: "/blog/"
-
-#- title: "CV"
-#  href: "/cv/"
 
 - title: "References"
   href: "/miscellany/"

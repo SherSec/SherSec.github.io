@@ -12,8 +12,8 @@ Sherbrooke, Québec's local infosec, electronic hackers, coffee fanatics and bre
 
 
 # Further reading
-* [SherSec meet-ups info](/about/meetups/)
-* [Shersec on the interwebz](/about/recursion/)
-* [Security for noobs](/about/sec4noobs/)
-* [Pull request welcome ](/about/pullrequest/)
+* [SherSec meet-ups info](/about/meetups.html)
+* [Shersec on the interwebz](/about/recursion.html)
+* [Security for noobs](/about/sec4noobs.html)
+* [Pull request welcome ](/about/pullrequest.html)
 * [Our humble blog](/blog)

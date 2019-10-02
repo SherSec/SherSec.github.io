@@ -2,13 +2,13 @@
   href: "/about/"
   subcategories:
     - subtitle: "meetups"
-      subhref: "/about/meetups/"
+      subhref: "/about/meetups.html"
     - subtitle: "pullrequest"
-      subhref: "/about/pullrequest/"
+      subhref: "/about/pullrequest.html"
     - subtitle: "recursion"
-      subhref: "/about/recursion/"
+      subhref: "/about/recursion.html"
     - subtitle: "sec4noobs"
-      subhref: "/about/sec4noobs/" 
+      subhref: "/about/sec4noobs.html" 
 
 
 - title: "blog"

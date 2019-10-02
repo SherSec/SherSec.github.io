@@ -17,3 +17,5 @@ Sherbrooke, Québec's local infosec, electronic hackers, coffee fanatics and bre
 * [Security for noobs](/about/sec4noobs.html)
 * [Pull request welcome ](/about/pullrequest.html)
 * [Our humble blog](/blog)
+
+...
